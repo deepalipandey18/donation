@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8fafc;
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
+.page-header h1 {
+  color: white;
+}
+
+.page-header p {
+  color: rgba(255,255,255,0.9);
+}
+
+.main-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.left-panel {
+  width: 420px;
+  position: sticky;
+  top: 20px;
+}
+
+.right-panel {
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    position: static;
+  }
+}
