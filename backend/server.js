@@ -14,7 +14,7 @@ mongoose.connect("mongodb+srv://deepalipandey1802_db_user:wa5NNeVBxKknL7B9@deepa
   .catch(err => console.log(err));
 
 // routes
-const donationRoutes = require("./routes/donationRoutes");
+const donationRoutes = require("./routes/DonationRoutes");
 app.use("/api", donationRoutes);
 
 // start server
